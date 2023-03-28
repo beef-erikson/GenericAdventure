@@ -1,7 +1,7 @@
 namespace GenericAdventure.Items;
 using Text;
 
-public class Inventory
+public class Inventory : IInventory
 {
     private List<Item> Items { get; } = new();
     public int Total => Items.Count;
@@ -11,10 +11,12 @@ public class Inventory
         Items.Add(item);
     }
 
-    public void Remove(Item item)
+    public bool Contains(string itemName)
     {
-        Items.Remove(item);
+        return Find(itemName) != null;
     }
+
+    public string[] InventoryList => Items.Select(item => item.Name).ToArray();
 
     public Item? Find(string itemName)
     {
@@ -40,10 +42,10 @@ public class Inventory
 
         return item;
     }
-
-    public bool Contains(string itemName)
+    
+    public void Remove(Item item)
     {
-        return Find(itemName) != null;
+        Items.Remove(item);
     }
 
     public Item? Take(string itemName)
