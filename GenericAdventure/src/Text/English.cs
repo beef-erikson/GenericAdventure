@@ -30,5 +30,8 @@ public class English : Language
             "strange"
         };
         NoItem = "The item {0} doesn't appear to exist.";
+        Backpack = "Backpack";
+        BackpackError = "Your backpack seems to be empty.";
+        BackpackDescription = "Your backpack contains: {0}";
     }
 }
