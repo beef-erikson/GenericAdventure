@@ -1,6 +1,6 @@
 namespace GenericAdventure;
 
-public class Character
+public abstract class Language
 {
     
 }
