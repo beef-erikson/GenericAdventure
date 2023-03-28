@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using GenericAdventure.Actions;
 using GenericAdventure.Characters;
 using GenericAdventure.Map;
 using GenericAdventure.Text;
@@ -19,3 +21,4 @@ var player = new Player(name!);
 Console.WriteLine(Text.Language.Welcome, player.Name);
 
 var house = new House(player);
+Actions.Instance.Register(new Go(house));

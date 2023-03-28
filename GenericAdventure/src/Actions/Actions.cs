@@ -1,6 +1,5 @@
-using GenericAdventure.Map;
-
 namespace GenericAdventure.Actions;
+using Text;
 
 public sealed class Actions
 {
@@ -51,7 +50,6 @@ public sealed class Actions
         else
         {
             Console.WriteLine(Text.Language.ActionError);
-            
         }
     }
 }

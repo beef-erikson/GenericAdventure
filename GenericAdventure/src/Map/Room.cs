@@ -1,4 +1,5 @@
 namespace GenericAdventure.Map;
+using Text;
 
 public class Room
 {
