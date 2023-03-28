@@ -33,5 +33,10 @@ public class English : Language
         Backpack = "Backpack";
         BackpackError = "Your backpack seems to be empty.";
         BackpackDescription = "Your backpack contains: {0}";
+        Chest = "chest";
+        UnlockChest = "You use the key to unlock the chest.";
+        Key = "key";
+        ChestEmpty = "You peer inside the chest but find nothing inside.";
+        ChestFound = "You look inside and find: {0}";
     }
 }

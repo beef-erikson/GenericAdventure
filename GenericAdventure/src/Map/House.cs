@@ -4,7 +4,7 @@ using GenericAdventure.Characters;
 
 public partial class House
 {
-    private Player Player { get; }
+    public Player Player { get; }
 
     private readonly Random _random = new(1234);
     
