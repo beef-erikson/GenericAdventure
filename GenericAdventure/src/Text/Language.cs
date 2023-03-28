@@ -1,6 +1,6 @@
 namespace GenericAdventure.Text;
 
-public abstract class Language
+public abstract partial class Language
 {
     public string Welcome { get; protected set; } = "";
     public string ChooseYourName { get; protected set; } = "";
@@ -13,4 +13,12 @@ public abstract class Language
     public string GoError { get; protected set; } = "";
     public string WhatToDo { get; protected set; } = "";
     public string Quit { get; protected set; } = "";
+    public string RoomNew { get; protected set; } = "";
+    public string RoomOld { get; protected set; } = "";
+    public string And { get; protected set; } = "";
+    public string Comma { get; protected set; } = "";
+    public string Space { get; protected set; } = "";
+    public List<string>? RoomDescriptions { get; protected set; }
+
+    
 }
