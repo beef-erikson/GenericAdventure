@@ -1,4 +1,4 @@
-namespace GenericAdventure;
+namespace GenericAdventure.Characters;
 
 public class Player : Character
 {

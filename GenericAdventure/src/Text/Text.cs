@@ -1,4 +1,4 @@
-namespace GenericAdventure;
+namespace GenericAdventure.Text;
 
 public static class Text
 {

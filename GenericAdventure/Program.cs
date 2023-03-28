@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using GenericAdventure;
+using GenericAdventure.Characters;
+using GenericAdventure.Text;
 
 Text.LoadLanguage(new English());
 
