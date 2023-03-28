@@ -29,5 +29,6 @@ public class English : Language
             "scary",
             "strange"
         };
+        NoItem = "The item {0} doesn't appear to exist.";
     }
 }
