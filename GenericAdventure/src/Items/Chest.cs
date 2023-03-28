@@ -7,7 +7,7 @@ using Text;
 public class Chest : Item, IInventory
 {
     private readonly House _house;
-    private readonly IInventory _inventory;
+    private readonly Inventory _inventory = new();
     public override string Name => Text.Language.Chest;
     public bool locked = true;
     public int Total => _inventory.Total;

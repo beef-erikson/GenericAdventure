@@ -47,6 +47,16 @@ public class Room : IInventory
 
         builder.Append(description);
 
+        if (_inventory.Total > 0)
+        {
+            var items = _inventory.InventoryList;
+            var pluralPre = items.Length > 1 ? Text.Language.Are : Text.Language.Is;
+            var pluralPost = items.Length > 1 ? Text.Language.Plural : "";
+
+            builder.Append(string.Format(Text.Language.TotalItems, pluralPre, items.Length, pluralPost));
+            builder.Append(Text.Language.JoinedWordList(items, Text.Language.And) + Text.Language.Period);
+        }
+        
         return builder.ToString();
     }
     

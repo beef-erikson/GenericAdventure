@@ -38,5 +38,18 @@ public class English : Language
         Key = "key";
         ChestEmpty = "You peer inside the chest but find nothing inside.";
         ChestFound = "You look inside and find: {0}";
+        Gold = "{0} gold {1}";
+        Coin = "coin";
+        Coins = Coin + "s";
+        Plural = "s";
+        Is = "is";
+        Are = "are";
+        TotalItems = "\nThere {0} {1} item{2} in the room: ";
+        Period = ".";
+        Take = "Take";
+        TakeError = "There is nothing here to take.";
+        NotTaken = "You can't take that.";
+        TookDescription = "You took a {0}.";
+        CantTakeDescription = "You can't take the {0}";
     }
 }
